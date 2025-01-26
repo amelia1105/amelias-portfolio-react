@@ -1,11 +1,11 @@
-function Footer() {
+function Project() {
     return (
         <div>
             <p>
-                Footer goes here
+                Put a project here
             </p>
         </div>
     );
   }
   
-  export default Footer;
+  export default Project;
