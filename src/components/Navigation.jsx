@@ -9,6 +9,7 @@ function Navigation() {
         <Link
           to="/"
           className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+          style={{ color: currentPage === '/' ? '#7C505E' : 'black', fontWeight: currentPage === '/' ? 'bold' : 'normal' }}
         >
           About Me
         </Link>
@@ -17,6 +18,7 @@ function Navigation() {
         <Link
           to="/Portfolio"
           className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
+          style={{ color: currentPage === '/Portfolio' ? '#7C505E' : 'black', fontWeight: currentPage === '/Portfolio' ? 'bold' : 'normal' }}
         >
           Portfolio
         </Link>
@@ -25,6 +27,7 @@ function Navigation() {
         <Link
           to="/Resume"
           className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
+          style={{ color: currentPage === '/Resume' ? '#7C505E' : 'black', fontWeight: currentPage === '/Resume' ? 'bold' : 'normal' }}
         >
           Resume
         </Link>
@@ -33,6 +36,7 @@ function Navigation() {
         <Link
           to="/Contact"
           className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+          style={{ color: currentPage === '/Contact' ? '#7C505E' : 'black', fontWeight: currentPage === '/Contact' ? 'bold' : 'normal' }}
         >
           Contact Me
         </Link>

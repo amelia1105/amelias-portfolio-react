@@ -1,10 +1,10 @@
+import '../styles/Footer.css';
+
 function Footer() {
     return (
-        <div>
-            <p>
-                Footer goes here
-            </p>
-        </div>
+      <footer className="footer">
+        <p>Footer goes here</p>
+      </footer>
     );
   }
   
