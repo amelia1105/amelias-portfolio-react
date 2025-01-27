@@ -38,7 +38,7 @@ function Navigation() {
           className={`nav-link ${currentPage === '/Contact' ? 'active' : ''}`}
           style={{ color: currentPage === '/Contact' ? '#7C505E' : 'black', fontWeight: currentPage === '/Contact' ? 'bold' : 'normal' }}
         >
-          Contact Me
+          Contact
         </Link>
       </li>
     </ul>
