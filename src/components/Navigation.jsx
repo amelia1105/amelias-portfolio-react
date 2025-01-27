@@ -4,11 +4,11 @@ function Navigation() {
   const currentPage = useLocation().pathname;
 
   return (
-    <ul className="nav nav-tabs">
+    <ul className="nav nav-tabs justify-content-end">
       <li className="nav-item">
         <Link
           to="/"
-          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+          className={`nav-link ${currentPage === '/' ? 'active' : ''}`}
           style={{ color: currentPage === '/' ? '#7C505E' : 'black', fontWeight: currentPage === '/' ? 'bold' : 'normal' }}
         >
           About Me
@@ -17,7 +17,7 @@ function Navigation() {
       <li className="nav-item">
         <Link
           to="/Portfolio"
-          className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
+          className={`nav-link ${currentPage === '/Portfolio' ? 'active' : ''}`}
           style={{ color: currentPage === '/Portfolio' ? '#7C505E' : 'black', fontWeight: currentPage === '/Portfolio' ? 'bold' : 'normal' }}
         >
           Portfolio
@@ -26,7 +26,7 @@ function Navigation() {
       <li className="nav-item">
         <Link
           to="/Resume"
-          className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
+          className={`nav-link ${currentPage === '/Resume' ? 'active' : ''}`}
           style={{ color: currentPage === '/Resume' ? '#7C505E' : 'black', fontWeight: currentPage === '/Resume' ? 'bold' : 'normal' }}
         >
           Resume
@@ -35,7 +35,7 @@ function Navigation() {
       <li className="nav-item">
         <Link
           to="/Contact"
-          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+          className={`nav-link ${currentPage === '/Contact' ? 'active' : ''}`}
           style={{ color: currentPage === '/Contact' ? '#7C505E' : 'black', fontWeight: currentPage === '/Contact' ? 'bold' : 'normal' }}
         >
           Contact Me

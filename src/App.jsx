@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="section">
+      <main className="section bg-white p-3">
         <Outlet />
       </main>
       <Footer />

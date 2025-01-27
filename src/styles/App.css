@@ -1,8 +1,19 @@
-.section {
-  background:white;
-  padding: 20px;
+/* Styles for small devices */
+@media (min-width: 480px) {
+
+}
+  
+/* Styles for tablets and larger devices */
+@media (min-width: 768px) {
+
 }
 
-.section h1 {
-  text-align: left;
+/* Styles for desktops and larger devices */
+@media (min-width: 1024px) {
+
+}
+
+/* Styles for large desktops */
+@media (min-width: 1440px) {
+
 }
