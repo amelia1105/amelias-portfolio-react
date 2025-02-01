@@ -1,13 +1,57 @@
 import Project from "../components/Project";
+import Row from 'react-bootstrap/Row';
 
 export default function Portfolio() {
-  return (
-    <div>
-      <h1>Portfolio</h1>
-      <p>
-          Here is a some of my work. Clicking on the image will take you to the live site if the application has been deployed. Clicking on the GitHub icon will take you to the repository. For applications that have not been deployed, clicking an image will take you to Render. This is for grading purposes and will be changed once this project has been graded. For placeholder projects, clicking on the image will take you to my GitHub profile.
-      </p>
-      <Project />
-    </div>
-  );
+    const projects = [
+        {
+            title: 'Weather Dashboard',
+            imgSrc: './assets/weather-dashboard.png',
+            liveLink: 'https://fun-weather-dashboard.onrender.com',
+            githubLink: 'https://github.com/amelia1105/fun-weather-dashboard'
+        },
+        {
+            title: 'Portfolio',
+            imgSrc: 'path/to/image5.jpg',
+            liveLink: 'https://render.com/',
+            githubLink: 'https://github.com/amelia1105/amelias-portfolio-react'
+        },
+        {
+            title: 'Employee Tracker',
+            imgSrc: './assets/employee-tracker.png',
+            liveLink: 'https://render.com/',
+            githubLink: 'https://github.com/amelia1105/amelias-employee-tracker'
+        },
+        {
+            title: 'Vehicle Builder',
+            imgSrc: './assets/vehicle-builder.png',
+            liveLink: 'https://render.com/',
+            githubLink: 'https://github.com/amelia1105/vehicle-builder'
+        },
+        {
+            title: 'README Generator',
+            imgSrc: './assets/readme-generator.png',
+            liveLink: 'https://render.com/',
+            githubLink: 'https://github.com/amelia1105/README-generator'
+        },
+        {
+            title: 'Placeholder project',
+            imgSrc: './assets/github-profile.png',
+            liveLink: 'https://github.com/amelia1105',
+            githubLink: 'https://github.com/amelia1105'
+        }
+    ];
+
+    return (
+        <div>
+            <h1>Portfolio</h1>
+            <p>
+                Here is some of my work. Clicking on the image will take you to the live site if the application has been deployed. Clicking on the GitHub icon will take you to the repository. For applications that have not been deployed, clicking an image will take you to Render. This is for grading purposes and will be changed once this project has been graded. For placeholder projects, clicking on the image will take you to my GitHub profile.
+            </p>
+            <Row xs={1} md={2} lg={3} className="g-4">
+                {projects.map((project, idx) => (
+                    <Project key={idx} {...project} />
+                ))}
+            </Row>
+        </div>
+    );
 }
