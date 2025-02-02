@@ -11,7 +11,7 @@ export default function Portfolio() {
         },
         {
             title: 'Portfolio',
-            imgSrc: 'path/to/image5.jpg',
+            imgSrc: './assets/portfolio.png',
             liveLink: 'https://render.com/',
             githubLink: 'https://github.com/amelia1105/amelias-portfolio-react'
         },

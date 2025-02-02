@@ -15,7 +15,7 @@ export default function About() {
             <h1 style={{ color: '#D58DF6', fontSize: '3rem', fontFamily: 'Courier New, sans-serif' }}>About Me</h1>
             <p>
               Hello! My name is Amelia Alvarado. I live in North Carolina and have a BS in Environmental Science and a MS in Data Analytics. 
-              I am currently pursuing a certificate in a coding bootcamp at Rutgers University. I have experience with HTML, CSS, JavaScript, Node.js, Express.js, 
+              I am currently pursuing a certification in the Rutgers University Coding Bootcamp. I have experience with HTML, CSS, JavaScript, Node.js, Express.js, 
               PostgreSQL, React, and more. I enjoy working with data and hope to use my skills in a development setting. I am excited to help you build your next project.
             </p>
           </Col>
