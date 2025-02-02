@@ -2,6 +2,8 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import { FaGithub } from "react-icons/fa";
 
+// Project component that displays a project card with a title, image, and links to the live site and GitHub repository
+// This card can be reused for each project in the Portfolio component
 function Project({ title, imgSrc, liveLink, githubLink }) {
     const cardStyle = {
         height: '300px',

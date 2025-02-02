@@ -1,11 +1,13 @@
 import { Link, useLocation } from 'react-router-dom';
 
+// Navigation component with links to About Me, Portfolio, Resume, and Contact
 function Navigation() {
   const currentPage = useLocation().pathname;
 
   return (
     <ul className="nav justify-content-end">
       <li className="nav-item">
+        {/* If you are on a page, the color of the tab is set to #D58DF6 and the font weight is set to bold */}
         <Link
           to="/"
           className={`nav-link ${currentPage === '/' ? 'active' : ''}`}

@@ -1,3 +1,4 @@
+// Resume component that links to a pdf of my resume located in the assets folder
 export default function Resume() {
   return (
     <div>

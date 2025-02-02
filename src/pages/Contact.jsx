@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+// Contact component with a form to submit a message
+// The form includes fields for name, email, and message
 function Contact() {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
@@ -67,6 +69,7 @@ function Contact() {
     }
   };
 
+  // An error appears if the user does not provide valid input
   return (
     <div>
       <h1 style={{ color: '#D58DF6', fontSize: '3rem', fontFamily: 'Courier New, sans-serif'  }}>Contact</h1>
