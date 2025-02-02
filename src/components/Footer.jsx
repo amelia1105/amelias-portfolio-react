@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaStackOverflow } from "react-icons/fa";
 
-
+// Footer component with links to StackOverflow, LinkedIn, and GitHub
 function Footer() {
   return (
     <>
@@ -28,6 +28,7 @@ function Footer() {
           </Nav.Link>
         </Nav.Item>
       </Nav>
+      {/* A copyright statement is included here */}
       <p style={{ textAlign: 'center', fontSize: '0.5em', color: '#9887AB' }}>
         &copy; 2025 Amelia Alvarado
       </p>

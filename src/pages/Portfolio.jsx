@@ -1,6 +1,8 @@
 import Project from "../components/Project";
 import Row from 'react-bootstrap/Row';
 
+// Portfolio page component
+// This component will render a list of projects using the Project component
 export default function Portfolio() {
     const projects = [
         {
@@ -47,6 +49,7 @@ export default function Portfolio() {
             <p>
                 Here is some of my work. Clicking on the image will take you to the live site if the application has been deployed. Clicking on the GitHub icon will take you to the repository. For applications that have not been deployed, clicking an image will take you to Render. This is for grading purposes and will be changed once this project has been graded. For placeholder projects, clicking on the image will take you to my GitHub profile.
             </p>
+            {/* Render a list of projects by looping through all the objects in projects*/}
             <Row xs={1} md={2} lg={3} className="g-4">
                 {projects.map((project, idx) => (
                     <Project key={idx} {...project} />

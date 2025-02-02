@@ -1,5 +1,7 @@
 import Navigation from './Navigation';
 
+// Header component that includes the Navigation component
+// Google Fonts 'Sacramento' is used for the h1 element
 function Header() {
   return (
     <header className="header d-flex flex-column flex-lg-row justify-content-between align-items-center p-5">

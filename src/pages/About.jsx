@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
+// About component with a photo and a brief description of the developer
 export default function About() {
   return (
     <div>
