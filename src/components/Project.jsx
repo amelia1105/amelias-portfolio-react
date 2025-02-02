@@ -4,14 +4,14 @@ import { FaGithub } from "react-icons/fa";
 
 function Project({ title, imgSrc, liveLink, githubLink }) {
     const cardStyle = {
-        height: '200px',
+        height: '300px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between'
     };
 
     const imgStyle = {
-        height: '150px',
+        height: '250px',
         objectFit: 'cover'
     };
 
