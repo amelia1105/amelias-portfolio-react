@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="app-container">
       <Header />
-      <main className="section bg-white p-3">
+      <main className="section p-3">
         <Outlet />
       </main>
       <Footer />

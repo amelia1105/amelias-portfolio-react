@@ -6,28 +6,32 @@ import { FaStackOverflow } from "react-icons/fa";
 
 function Footer() {
   return (
-    <Nav
-      className="footer justify-content-center"
-      activeKey="/home"
-      onSelect={(selectedKey) => window.open(selectedKey, '_blank')}
-      style={{ backgroundColor: '#573842' }}
-    >
-      <Nav.Item>
-        <Nav.Link eventKey="https://stackoverflow.com/users/29439479/amelia-bellanger-alvarado">
-          <FaStackOverflow style={{ color: 'black', fontSize: '2em' }}/>
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="https://www.linkedin.com/in/amelia-alvarado-691507297/">
-          <FaLinkedin style={{ color: 'black', fontSize: '2em' }}/>
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="https://github.com/amelia1105">
-          <FaGithub style={{ color: 'black', fontSize: '2em' }} />
-        </Nav.Link>
-      </Nav.Item>
-    </Nav>
+    <>
+      <Nav
+        className="footer justify-content-center"
+        activeKey="/home"
+        onSelect={(selectedKey) => window.open(selectedKey, '_blank')}
+      >
+        <Nav.Item>
+          <Nav.Link eventKey="https://stackoverflow.com/users/29439479/amelia-bellanger-alvarado">
+            <FaStackOverflow style={{ color: '#D58DF6', fontSize: '1.5em' }} />
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="https://www.linkedin.com/in/amelia-alvarado-691507297/">
+            <FaLinkedin style={{ color: '#D58DF6', fontSize: '1.5em' }} />
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="https://github.com/amelia1105">
+            <FaGithub style={{ color: '#D58DF6', fontSize: '1.5em' }} />
+          </Nav.Link>
+        </Nav.Item>
+      </Nav>
+      <p style={{ textAlign: 'center', fontSize: '0.5em', color: '#9887AB' }}>
+        &copy; 2025 Amelia Alvarado
+      </p>
+    </>
   );
 }
 

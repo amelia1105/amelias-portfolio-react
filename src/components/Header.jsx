@@ -2,12 +2,13 @@ import Navigation from './Navigation';
 
 function Header() {
   return (
-    <header className="header text-center" style={{ backgroundColor: '#B9929F' }}>
-      <h1 className="text-dark-pink pt-5 display-1" style={{ fontFamily: 'tahoma, serif', color: '#693A52' }}>Amelia Alvarado</h1>
+    <header className="header d-flex flex-column flex-lg-row justify-content-between align-items-center p-5">
+      <h1 className="display-1 text-center text-md-start" style={{ fontFamily: "'Sacramento', cursive", color: '#D58DF6' }}>
+        Amelia Alvarado
+      </h1>
       <Navigation />
     </header>
   );
 }
-  
+
 export default Header;
-  

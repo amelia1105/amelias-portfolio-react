@@ -1,7 +1,7 @@
 export default function Resume() {
   return (
     <div>
-      <h1>Resume</h1>
+      <h1 style={{ color: '#D58DF6', fontSize: '3rem', fontFamily: 'Courier New, sans-serif'  }}>Resume</h1>
       <p>
         Download my resume here: {' '}
         <a href="./assets/Alvarado-Resume.pdf" download>Amelia&apos;s Resume</a>
