@@ -55,6 +55,14 @@ The application can be used in a web browser. Use the link in [Link to Applicati
 
 2. Use the tabs at the top right to navigate to the other pages. Use the links at the bottom to connect with me on StackOverflow, LinkedIn, and GitHub.
 
+If you have loaded the repository onto your local device:
+
+1. Run the application using the following command. Note that the repository is set up to run on port 3000. You may need to change the port or check if you are running anything on port 3000.
+
+    ```sh
+    npm run dev
+    ```
+
 ## Credits
 
 Although no starter code was provided for this assignment, I used some files from other projects to get started. I initially created a Vite project and then used the source code from the 23-Ins_React-Router assignment to get my React component interactions and navigation tabs set up (in GitLab, [RUT-VIRT-FSF-PT-10-2024-U-LOLC](https://git.bootcampcontent.com/Rutgers-University/RUT-VIRT-FSF-PT-10-2024-U-LOLC) > 12-React > 01-Activities > 23-Ins_React-Router). I used React Bootstrap components, Bootstrap CSS, and React Icons throughout the project. The background photo is from Pawel Czerwinski on [Unsplash](https://unsplash.com/photos/a-purple-abstract-background-with-curves-1A_dO4TFKgM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash). I was inspired by the design of another developer's portfolio, [Soumyajit Behera](https://soumyajit.vercel.app/), and used a similar color scheme in my project. All other code was developed by myself with the assistance of GitHub Copilot and ChatGPT.
