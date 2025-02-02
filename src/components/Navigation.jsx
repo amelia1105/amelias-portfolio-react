@@ -4,12 +4,12 @@ function Navigation() {
   const currentPage = useLocation().pathname;
 
   return (
-    <ul className="nav nav-tabs justify-content-end">
+    <ul className="nav justify-content-end">
       <li className="nav-item">
         <Link
           to="/"
           className={`nav-link ${currentPage === '/' ? 'active' : ''}`}
-          style={{ color: currentPage === '/' ? '#7C505E' : 'black', fontWeight: currentPage === '/' ? 'bold' : 'normal' }}
+          style={{ color: currentPage === '/' ? '#D58DF6' : 'white', fontWeight: currentPage === '/' ? 'bold' : 'normal' }}
         >
           About Me
         </Link>
@@ -18,7 +18,7 @@ function Navigation() {
         <Link
           to="/Portfolio"
           className={`nav-link ${currentPage === '/Portfolio' ? 'active' : ''}`}
-          style={{ color: currentPage === '/Portfolio' ? '#7C505E' : 'black', fontWeight: currentPage === '/Portfolio' ? 'bold' : 'normal' }}
+          style={{ color: currentPage === '/Portfolio' ? '#D58DF6' : 'white', fontWeight: currentPage === '/Portfolio' ? 'bold' : 'normal' }}
         >
           Portfolio
         </Link>
@@ -27,7 +27,7 @@ function Navigation() {
         <Link
           to="/Resume"
           className={`nav-link ${currentPage === '/Resume' ? 'active' : ''}`}
-          style={{ color: currentPage === '/Resume' ? '#7C505E' : 'black', fontWeight: currentPage === '/Resume' ? 'bold' : 'normal' }}
+          style={{ color: currentPage === '/Resume' ? '#D58DF6' : 'white', fontWeight: currentPage === '/Resume' ? 'bold' : 'normal' }}
         >
           Resume
         </Link>
@@ -36,7 +36,7 @@ function Navigation() {
         <Link
           to="/Contact"
           className={`nav-link ${currentPage === '/Contact' ? 'active' : ''}`}
-          style={{ color: currentPage === '/Contact' ? '#7C505E' : 'black', fontWeight: currentPage === '/Contact' ? 'bold' : 'normal' }}
+          style={{ color: currentPage === '/Contact' ? '#D58DF6' : 'white', fontWeight: currentPage === '/Contact' ? 'bold' : 'normal' }}
         >
           Contact
         </Link>

@@ -69,7 +69,7 @@ function Contact() {
 
   return (
     <div>
-      <h1>Contact</h1>
+      <h1 style={{ color: '#D58DF6', fontSize: '3rem', fontFamily: 'Courier New, sans-serif'  }}>Contact</h1>
       <Form onSubmit={handleFormSubmit}>
         <Form.Group className="mb-3">
           <Form.Label>Name</Form.Label>
