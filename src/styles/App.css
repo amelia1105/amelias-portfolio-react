@@ -11,3 +11,9 @@
   .section {
     flex-grow: 1; /* Pushes footer down when content is short */
   }
+
+  @media (max-width: 768px) {
+    .section {
+      font-size: 14px; /* Adjust as needed */
+    }
+  }

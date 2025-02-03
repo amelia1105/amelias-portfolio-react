@@ -1,49 +1,54 @@
+import { useState } from 'react';
+import { FaBars } from 'react-icons/fa';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import { Link, useLocation } from 'react-router-dom';
 
-// Navigation component with links to About Me, Portfolio, Resume, and Contact
 function Navigation() {
+  const [collapsed, setCollapsed] = useState(true); // Control collapse state manually
   const currentPage = useLocation().pathname;
 
+  // Manually collapse the navbar when a link is clicked
+  const handleSelect = () => {
+    setCollapsed(true);
+  };
+
   return (
-    <ul className="nav justify-content-end">
-      <li className="nav-item">
-        {/* If you are on a page, the color of the tab is set to #D58DF6 and the font weight is set to bold */}
-        <Link
-          to="/"
-          className={`nav-link ${currentPage === '/' ? 'active' : ''}`}
-          style={{ color: currentPage === '/' ? '#D58DF6' : 'white', fontWeight: currentPage === '/' ? 'bold' : 'normal' }}
+    <Navbar collapseOnSelect expand="lg" variant="light">
+      <Container>
+        {/* Custom Hamburger Icon */}
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => setCollapsed(!collapsed)} // Manually toggle collapse
         >
-          About Me
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/Portfolio"
-          className={`nav-link ${currentPage === '/Portfolio' ? 'active' : ''}`}
-          style={{ color: currentPage === '/Portfolio' ? '#D58DF6' : 'white', fontWeight: currentPage === '/Portfolio' ? 'bold' : 'normal' }}
-        >
-          Portfolio
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/Resume"
-          className={`nav-link ${currentPage === '/Resume' ? 'active' : ''}`}
-          style={{ color: currentPage === '/Resume' ? '#D58DF6' : 'white', fontWeight: currentPage === '/Resume' ? 'bold' : 'normal' }}
-        >
-          Resume
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/Contact"
-          className={`nav-link ${currentPage === '/Contact' ? 'active' : ''}`}
-          style={{ color: currentPage === '/Contact' ? '#D58DF6' : 'white', fontWeight: currentPage === '/Contact' ? 'bold' : 'normal' }}
-        >
-          Contact
-        </Link>
-      </li>
-    </ul>
+          <FaBars color="white" size="24" />
+        </Navbar.Toggle>
+        {/* Navbar collapse */}
+        <Navbar.Collapse id="responsive-navbar-nav" in={!collapsed}>
+          <Nav className="ms-auto">
+            {['/', '/Portfolio', '/Resume', '/Contact'].map((path, index) => {
+              const labels = ['About Me', 'Portfolio', 'Resume', 'Contact'];
+              return (
+                <Nav.Link
+                  as={Link}
+                  to={path}
+                  key={index}
+                  onClick={handleSelect} // Collapse on link click
+                  className={`${currentPage === path ? 'active' : ''} mx-2`}
+                  style={{
+                    color: currentPage === path ? '#D58DF6' : 'white',
+                    fontWeight: currentPage === path ? 'bold' : 'normal',
+                  }}
+                >
+                  {labels[index]}
+                </Nav.Link>
+              );
+            })}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
