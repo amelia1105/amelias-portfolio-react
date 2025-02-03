@@ -21,7 +21,7 @@ export default function Portfolio() {
         {
             title: 'Portfolio',
             imgSrc: portfolio,
-            liveLink: 'https://render.com/',
+            liveLink: 'https://amelia-alvarado.netlify.app/',
             githubLink: 'https://github.com/amelia1105/amelias-portfolio-react'
         },
         {

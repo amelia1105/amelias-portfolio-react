@@ -17,7 +17,7 @@ This project involves creating a portfolio that consists of an About Me section,
 
 ## Link to Application
 
-link goes here
+[Amelia's Portfolio](https://amelia-alvarado.netlify.app/)
 
 ## Installation
 
