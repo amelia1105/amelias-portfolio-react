@@ -3,7 +3,7 @@
     flex-direction: column;
     min-height: 100vh; /* Ensures full viewport height */
     color: white;
-    background-image: url('./assets/background.png');
+    background-image: url('/src/assets/imgs/background.png');
     background-size: cover;
     background-position: center;
     }
