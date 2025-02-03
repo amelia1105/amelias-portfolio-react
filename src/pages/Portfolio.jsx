@@ -1,43 +1,50 @@
 import Project from "../components/Project";
 import Row from 'react-bootstrap/Row';
 
+import weatherDashboard from '../assets/imgs/weather-dashboard.png';
+import portfolio from '../assets/imgs/portfolio.png';
+import employeeTracker from '../assets/imgs/employee-tracker.png';
+import vehicleBuilder from '../assets/imgs/vehicle-builder.png';
+import readmeGenerator from '../assets/imgs/readme-generator.png';
+import githubProfile from '../assets/imgs/github-profile.png';
+
 // Portfolio page component
 // This component will render a list of projects using the Project component
 export default function Portfolio() {
     const projects = [
         {
             title: 'Weather Dashboard',
-            imgSrc: '/src/assets/imgs/weather-dashboard.png',
+            imgSrc: weatherDashboard,
             liveLink: 'https://fun-weather-dashboard.onrender.com',
             githubLink: 'https://github.com/amelia1105/fun-weather-dashboard'
         },
         {
             title: 'Portfolio',
-            imgSrc: '/src/assets/imgs/portfolio.png',
+            imgSrc: portfolio,
             liveLink: 'https://render.com/',
             githubLink: 'https://github.com/amelia1105/amelias-portfolio-react'
         },
         {
             title: 'Employee Tracker',
-            imgSrc: '/src/assets/imgs/employee-tracker.png',
+            imgSrc: employeeTracker,
             liveLink: 'https://render.com/',
             githubLink: 'https://github.com/amelia1105/amelias-employee-tracker'
         },
         {
             title: 'Vehicle Builder',
-            imgSrc: '/src/assets/imgs/vehicle-builder.png',
+            imgSrc: vehicleBuilder,
             liveLink: 'https://render.com/',
             githubLink: 'https://github.com/amelia1105/vehicle-builder'
         },
         {
             title: 'README Generator',
-            imgSrc: '/src/assets/imgs/readme-generator.png',
+            imgSrc: readmeGenerator,
             liveLink: 'https://render.com/',
             githubLink: 'https://github.com/amelia1105/README-generator'
         },
         {
             title: 'Placeholder project',
-            imgSrc: '/src/assets/imgs/github-profile.png',
+            imgSrc: githubProfile,
             liveLink: 'https://github.com/amelia1105',
             githubLink: 'https://github.com/amelia1105'
         }
