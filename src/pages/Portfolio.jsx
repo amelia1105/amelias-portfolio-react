@@ -7,37 +7,37 @@ export default function Portfolio() {
     const projects = [
         {
             title: 'Weather Dashboard',
-            imgSrc: './assets/weather-dashboard.png',
+            imgSrc: '/src/assets/imgs/weather-dashboard.png',
             liveLink: 'https://fun-weather-dashboard.onrender.com',
             githubLink: 'https://github.com/amelia1105/fun-weather-dashboard'
         },
         {
             title: 'Portfolio',
-            imgSrc: './assets/portfolio.png',
+            imgSrc: '/src/assets/imgs/portfolio.png',
             liveLink: 'https://render.com/',
             githubLink: 'https://github.com/amelia1105/amelias-portfolio-react'
         },
         {
             title: 'Employee Tracker',
-            imgSrc: './assets/employee-tracker.png',
+            imgSrc: '/src/assets/imgs/employee-tracker.png',
             liveLink: 'https://render.com/',
             githubLink: 'https://github.com/amelia1105/amelias-employee-tracker'
         },
         {
             title: 'Vehicle Builder',
-            imgSrc: './assets/vehicle-builder.png',
+            imgSrc: '/src/assets/imgs/vehicle-builder.png',
             liveLink: 'https://render.com/',
             githubLink: 'https://github.com/amelia1105/vehicle-builder'
         },
         {
             title: 'README Generator',
-            imgSrc: './assets/readme-generator.png',
+            imgSrc: '/src/assets/imgs/readme-generator.png',
             liveLink: 'https://render.com/',
             githubLink: 'https://github.com/amelia1105/README-generator'
         },
         {
             title: 'Placeholder project',
-            imgSrc: './assets/github-profile.png',
+            imgSrc: '/src/assets/imgs/github-profile.png',
             liveLink: 'https://github.com/amelia1105',
             githubLink: 'https://github.com/amelia1105'
         }
