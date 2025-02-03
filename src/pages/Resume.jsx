@@ -1,3 +1,5 @@
+import alvResume from '../assets/Alvarado-Resume.pdf';
+
 // Resume component that links to a pdf of my resume located in the assets folder
 export default function Resume() {
   return (
@@ -5,7 +7,7 @@ export default function Resume() {
       <h1 style={{ color: '#D58DF6', fontSize: '3rem', fontFamily: 'Courier New, sans-serif'  }}>Resume</h1>
       <p>
         Download my resume here: {' '}
-        <a href="/src/assets/Alvarado-Resume.pdf" download>Amelia&apos;s Resume</a>
+        <a href={alvResume} download>Amelia&apos;s Resume</a>
       </p>
       <h3>Front End Experience</h3>
       <ul>

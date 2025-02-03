@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
+import gradPhoto from '../assets/imgs/grad-photo.jpg';
+
 // About component with a photo and a brief description of the developer
 export default function About() {
   return (
@@ -10,7 +12,7 @@ export default function About() {
       <Container>
         <Row className="p-2">
           <Col xs={12} sm={12} md={6} lg={5} className="d-flex justify-content-center mb-3 mb-md-0">
-            <Image src="/src/assets/imgs/grad-photo.jpg" roundedCircle width={300} height={300} />
+            <Image src={gradPhoto} alt="picture of developer" roundedCircle width={300} height={300} />
           </Col>
           <Col xs={12} sm={12} md={6} lg={7}>
             <h1 style={{ color: '#D58DF6', fontSize: '3rem', fontFamily: 'Courier New, sans-serif' }}>About Me</h1>
