@@ -51,7 +51,7 @@ The application can be used in a web browser. Use the link in [Link to Applicati
 
 1. The link will take you to the home page for my portfolio.
 
-    ![portfolio main page](./assets/portfolio-homepage.png)
+    ![portfolio main page](./src/assets/imgs/portfolio-homepage.png)
 
 2. Use the tabs at the top right to navigate to the other pages. Use the links at the bottom to connect with me on StackOverflow, LinkedIn, and GitHub.
 
