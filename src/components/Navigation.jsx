@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaBars } from 'react-icons/fa';
+import { BsList } from "react-icons/bs";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -22,7 +22,7 @@ function Navigation() {
           aria-controls="responsive-navbar-nav"
           onClick={() => setCollapsed(!collapsed)} // Manually toggle collapse
         >
-          <FaBars color="white" size="24" />
+          <BsList color="white" size="24" />
         </Navbar.Toggle>
         {/* Navbar collapse */}
         <Navbar.Collapse id="responsive-navbar-nav" in={!collapsed}>

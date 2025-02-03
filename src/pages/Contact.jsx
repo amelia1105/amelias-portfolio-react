@@ -73,7 +73,7 @@ function Contact() {
   return (
     <div>
       <h1 style={{ color: '#D58DF6', fontSize: '3rem', fontFamily: 'Courier New, sans-serif'  }}>Contact</h1>
-      <p style={{ marginTop: '20px' }}>Currently, this application does not contain back-end functionality. It will be added soon! Please contact me at aebellanger@yahoo.com or at 910-334-0282.</p>
+      <p style={{ marginTop: '20px' }}>Currently, this application does not contain back-end functionality. It will be added soon! Please contact me at aebellanger@yahoo.com.</p>
       <Form onSubmit={handleFormSubmit}>
         <Form.Group className="mb-3">
           <Form.Label>Name</Form.Label>
