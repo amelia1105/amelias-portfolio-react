@@ -53,8 +53,13 @@ export default function Portfolio() {
     return (
         <div>
             <h1 style={{ color: '#D58DF6', fontSize: '3rem', fontFamily: 'Courier New, sans-serif'  }}>Portfolio</h1>
+            <h4>Here&apos;s some of my work!</h4>
             <p>
-                Here is some of my work. Clicking on the image will take you to the live site if the application has been deployed. Clicking on the GitHub icon will take you to the repository. For applications that have not been deployed, clicking an image will take you to Render. This is for grading purposes and will be changed once this project has been graded. For placeholder projects, clicking on the image will take you to my GitHub profile.
+                Click on the image to visit the live site if the application is deployed. Unfortunately, due to budget limitations, some projects may not have an active database, which could affect the website&apos;s functionality.
+                If you&apos;d like to see any of the websites with a functioning database, just reach out, and I&apos;ll be happy to reactivate the database for you! You can also check out the project&apos;s code by clicking on the GitHub icon next to each project&apos;s title.
+            </p>
+            <p>
+                A quick note: some projects may still show my previous name, Amelia Bellanger. I changed my name to Amelia Alvarado after getting married during my bootcamp program. I also created a new email address to reflect my name change, but some of my projects will show my old email address, aebellanger@yahoo.com, in the README.
             </p>
             {/* Render a list of projects by looping through all the objects in projects*/}
             <Row xs={1} md={2} lg={3} className="g-4">

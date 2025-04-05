@@ -19,7 +19,7 @@ export default function About() {
             <p>
               Hello! My name is Amelia Alvarado. I live in North Carolina and have a BS in Environmental Science and a MS in Data Analytics. 
               I am currently pursuing a certification in the Rutgers University Coding Bootcamp. I have experience with HTML, CSS, JavaScript, Node.js, Express.js, 
-              PostgreSQL, React, and more. I enjoy working with data and hope to use my skills in a development setting. I am excited to help you build your next project.
+              PostgreSQL, React, and more. I enjoy working with data and hope to use my skills in a development setting. I am excited to help you build your next project!
             </p>
           </Col>
         </Row>
