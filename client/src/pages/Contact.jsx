@@ -60,7 +60,7 @@ function Contact() {
     const formErrors = validateForm();
     if (Object.keys(formErrors).length === 0) {
       try {
-        const response = await axios.post('https://amelias-portfolio-react.onrender.com', {
+        const response = await axios.post('https://amelias-portfolio-react.onrender.com/contacts/', {
           name: fullName,
           email: email,
           message: message,
