@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import axios from 'axios';
 
 // Contact component with a form to submit a message
 function Contact() {
@@ -54,24 +55,38 @@ function Contact() {
     return newErrors;
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
     const formErrors = validateForm();
     if (Object.keys(formErrors).length === 0) {
-      alert(`Name: ${fullName}\nEmail: ${email}\nMessage: ${message}`);
-      setFullName('');
-      setEmail('');
-      setMessage('');
-      setErrors({});
+      try {
+        const response = await axios.post('http://localhost:8000/contacts/', {
+          name: fullName,
+          email: email,
+          message: message,
+        });
+        if (response.status === 200) {
+          alert('Your contact information has been submitted!');
+          setFullName('');
+          setEmail('');
+          setMessage('');
+          setErrors({});
+        } else {
+          alert('There was an error submitting your contact information.');
+        }
+      } catch (error) {
+        console.error('There was an error submitting your contact information:', error);
+        alert('There was an error submitting your contact information.');
+      }
     } else {
       setErrors(formErrors);
     }
-  };
+  };  
 
   return (
     <div style={{ textAlign: 'left' }}>
       <h1 style={{ color: '#D58DF6', fontSize: '3rem', fontFamily: 'Courier New, sans-serif' }}>Contact</h1>
-      <p style={{ marginTop: '20px' }}>Currently, this application does not contain back-end functionality. It will be added soon! Please contact me at ameliabalvarado@gmail.com.</p>
+      <p style={{ marginTop: '20px' }}>Send me a message, or email me directly at ameliabalvarado@gmail.com.</p>
       <div className="form-container" style={{ maxWidth: '700px', margin: '0 auto', padding: '20px' }}>
         <Form onSubmit={handleFormSubmit}>
           <Form.Group className="mb-3">
