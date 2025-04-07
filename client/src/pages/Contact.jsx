@@ -67,7 +67,7 @@ function Contact() {
           message: message,
         });
         if (response.status === 200) {
-          setSubmissionMessage('Your contact information has been submitted!');
+          setSubmissionMessage('Your contact information has been submitted! I will get back to you as soon as possible.');
           setFullName('');
           setEmail('');
           setMessage('');

@@ -33,8 +33,8 @@ export default function Resume() {
       </ul>
       <h4>APIs</h4>
       <ul>
-        <li>RESTful APIs</li>
-        <li>GraphQL APIs</li>
+        <li>REST</li>
+        <li>GraphQL</li>
       </ul>
       <h4>Testing</h4>
       <ul>
