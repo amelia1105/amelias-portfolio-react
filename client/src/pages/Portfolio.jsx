@@ -2,51 +2,57 @@ import Project from "../components/Project";
 import Row from 'react-bootstrap/Row';
 
 import weatherDashboard from '../assets/imgs/weather-dashboard.png';
+import graphQL from '../assets/imgs/graphql-search.png';
 import portfolio from '../assets/imgs/portfolio.png';
-import employeeTracker from '../assets/imgs/employee-tracker.png';
-import vehicleBuilder from '../assets/imgs/vehicle-builder.png';
-import readmeGenerator from '../assets/imgs/readme-generator.png';
-import githubProfile from '../assets/imgs/github-profile.png';
+import candidateSearch from '../assets/imgs/candidate-search.png';
+import kanbanBoard from '../assets/imgs/kanban.png';
+import munchies from '../assets/imgs/munchies.png';
 
 // Portfolio page component
 // This component will render a list of projects using the Project component
 export default function Portfolio() {
     const projects = [
         {
-            title: 'Weather Dashboard',
-            imgSrc: weatherDashboard,
-            liveLink: 'https://fun-weather-dashboard.onrender.com',
-            githubLink: 'https://github.com/amelia1105/fun-weather-dashboard'
-        },
-        {
             title: 'Portfolio',
             imgSrc: portfolio,
             liveLink: 'https://amelia-alvarado.netlify.app/',
-            githubLink: 'https://github.com/amelia1105/amelias-portfolio-react'
+            githubLink: 'https://github.com/amelia1105/amelias-portfolio-react',
+            description: 'This is the website you are currently on! It was built using React and Bootstrap on the front end with Python and PostgreSQL on the back end. The website is responsive and works on mobile devices.'
         },
         {
-            title: 'Employee Tracker',
-            imgSrc: employeeTracker,
-            liveLink: 'https://render.com/',
-            githubLink: 'https://github.com/amelia1105/amelias-employee-tracker'
+            title: 'Munchies: Grocery Tracker',
+            imgSrc: munchies,
+            liveLink: 'https://munchies-0ii3.onrender.com',
+            githubLink: 'https://github.com/AshB88/Munchies/tree/b3c272557c7f9cc2318e551f75e0fa66c0552b83',
+            description: 'This was a group project I worked on with four other aspiring developers. It is a grocery tracker that allows users to keep track of their grocery lists, and uses a PostgreSQL database to store users and their lists. It demonstrates authentication and authorization.'
         },
         {
-            title: 'Vehicle Builder',
-            imgSrc: vehicleBuilder,
-            liveLink: 'https://render.com/',
-            githubLink: 'https://github.com/amelia1105/vehicle-builder'
+            title: 'Google Books Search',
+            imgSrc: graphQL,
+            liveLink: 'https://graphql-book-search-bucy.onrender.com',
+            githubLink: 'https://github.com/amelia1105/graphql-book-search',
+            description: 'I converted this fully functional React app to use GraphQL instead of REST APIs. It allows users to search for books using the Google Books API and then save them to a list stored in a MongoDB Atlas database. Apollo Client is used to manage the GraphQL queries and mutations.'
         },
         {
-            title: 'README Generator',
-            imgSrc: readmeGenerator,
-            liveLink: 'https://render.com/',
-            githubLink: 'https://github.com/amelia1105/README-generator'
+            title: 'Krazy Kanban Board',
+            imgSrc: kanbanBoard,
+            liveLink: 'https://secure-kanban.onrender.com/',
+            githubLink: 'https://github.com/amelia1105/secure-kanban',
+            description: 'This React application allows users to create cards on a Kanban board and move the cards between columns. A PostgreSQL database is used to store users and each of their boards. The primary purpose of this app was to demonstrate authentication and authorization with JWTs.'
         },
         {
-            title: 'Placeholder project',
-            imgSrc: githubProfile,
-            liveLink: 'https://github.com/amelia1105',
-            githubLink: 'https://github.com/amelia1105'
+            title: 'GitHub Candidate Search',
+            imgSrc: candidateSearch,
+            liveLink: 'https://swipe-candidate-search.onrender.com',
+            githubLink: 'https://github.com/amelia1105/swipe-candidate-search',
+            description: 'This React application presents potential employers with a GitHub user, allows them to reject or save the candidate, and then presents them with a new GitHub user. Saved candidates are on a "Potential Candidates" list. This app uses the GitHub Personal Access Token to access to GitHub accounts. Saved users are stored in local storage.'
+        },
+        {
+            title: 'Weather Dashboard',
+            imgSrc: weatherDashboard,
+            liveLink: 'https://fun-weather-dashboard.onrender.com',
+            githubLink: 'https://github.com/amelia1105/fun-weather-dashboard',
+            description: 'This was my first deployed website! It is a weather dashboard that allows users to search for a city and see the current weather and that city\'s forecast. It uses the OpenWeather API to get the weather data and stores the last searched cities in local storage. This app was built using HTML, CSS, and TypeScript.'
         }
     ];
 
@@ -55,7 +61,7 @@ export default function Portfolio() {
             <h1 style={{ color: '#D58DF6', fontSize: '3rem', fontFamily: 'Courier New, sans-serif'  }}>Portfolio</h1>
             <h4>Here&apos;s some of my work!</h4>
             <p>
-                Click on the image to visit the live site if the application is deployed. Unfortunately, due to budget limitations, some projects may not have an active database, which could affect the website&apos;s functionality.
+                Click on the image to visit the live site. Unfortunately, due to budget limitations, some projects may not have an active database, which could affect the website&apos;s functionality.
                 If you&apos;d like to see any of the websites with a functioning database, just reach out, and I&apos;ll be happy to reactivate the database for you! You can also check out the project&apos;s code by clicking on the GitHub icon next to each project&apos;s title.
             </p>
             <p>
