@@ -9,6 +9,7 @@ function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState({});
+  const [submissionMessage, setSubmissionMessage] = useState('');
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -66,17 +67,17 @@ function Contact() {
           message: message,
         });
         if (response.status === 200) {
-          alert('Your contact information has been submitted!');
+          setSubmissionMessage('Your contact information has been submitted!');
           setFullName('');
           setEmail('');
           setMessage('');
           setErrors({});
         } else {
-          alert('There was an error submitting your contact information.');
+          setSubmissionMessage('There was an error submitting your contact information.');
         }
       } catch (error) {
         console.error('There was an error submitting your contact information:', error);
-        alert('There was an error submitting your contact information.');
+        setSubmissionMessage('There was an error submitting your contact information.');
       }
     } else {
       setErrors(formErrors);
@@ -136,6 +137,11 @@ function Contact() {
           <Button variant="primary" type="submit">
             Submit
           </Button>
+          {submissionMessage && (
+            <p style={{ marginTop: '15px', color: submissionMessage.includes('error') ? 'red' : 'white' }}>
+              {submissionMessage}
+            </p>
+          )}
         </Form>
       </div>
     </div>
