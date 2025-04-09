@@ -4,93 +4,146 @@
 
 ## Description
 
-This project involves creating a portfolio that consists of an About Me section, a Portfolio section, a Resume section, and a Contact section. This portfolio was developed using React. As a future software developer, having a portfolio will not only help me standout among other candidates, but it will also help me connect with other developers in the community. Further, I will be able to provide concrete examples of my skills by simply directing employers to my website. I learned a lot while creating this project, like how React components interact with each other, how to modularize code, and how to integrate React component libraries into my code.
+This portfolio site was built with React and features an About Me section, project portfolio, resume, and contact form. It serves as both a personal introduction and a professional hub where potential employers and fellow developers can explore my background, skills, and projects.
+
+In a recent update, I added a Python-based back end using FastAPI and SQLAlchemy. This allows users to submit contact information through a form, with the data stored securely in a relational database. This was my first time working with FastAPI, and it gave me valuable hands-on experience building and connecting a RESTful API using Python.
+
+Through this project, I gained experience with component-based architecture, code modularization, full-stack integration, and modern development tools and libraries. It reflects my ability to work across both the front and back end of a web application and my eagerness to learn new technologies.
 
 ## Table of Contents
 
-- [Link to Application](#link-to-application)
+- [Live Site](#live-site)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-- [Questions](#questions)
+- [Contact](#contact)
 
-## Link to Application
+## Live Site
 
-[Amelia's Portfolio](https://amelia-alvarado.netlify.app/)
+👉 [Visit the Portfolio](https://amelia-alvarado.netlify.app/)
 
 ## Installation
 
-This application is accessible in any web browser using the link above. No installation is required.
+This application is accessible in any modern web browser using the link provided in the [Live Site](#live-site) section. No installation is required to view the deployed portfolio.
 
-To install the application on your local device for editing or to view the repo, perform the following steps:
+To run the project locally:
 
-1. In the terminal, navigate to where you would like the repo to be stored on your device.
+### Front-End Installation (React)
 
-2. Clone the repo to your device using the following:
+1. Open your terminal and navigate to where you would like to store this repo on your device.
 
-    ```sh
-    git clone https://github.com/amelia1105/amelias-portfolio-react.git
-    ```
+2. Clone the repo:
 
-3. Switch into the amelias-portfolio-react directory. 
+   ```sh
+   git clone https://github.com/amelia1105/amelias-portfolio-react.git
+   ```
 
-    ```sh
-    cd amelias-portfolio-react
-    ```
+3. Navigate into the project folder:
 
-4. In the command line, install dependencies using the following:
+   ```sh
+   cd amelias-portfolio-react
+   ```
 
-    ```sh
-    npm install
-    ```
+4. Navigate into the client folder:
+
+   ```sh
+   cd client
+   ```
+
+5. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+6. Build the app:
+
+   ```sh
+   npm run build
+   ```
+
+7. Start the development server (default: port 3000):
+
+   ```sh
+   npm run start
+   ```
+
+### Back-End Installation (FastAPI + SQLAlchemy + PostgreSQL)
+
+1. Ensure you have **Python 3.8+**, **pip**, and **PostgreSQL** installed.
+
+2. Create and activate a virtual environment:
+
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Navigate to the server directory:
+
+   ```sh
+   cd server
+   ```
+
+4. Install the required Python packages:
+
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+   or
+
+   ```sh
+   pip3 install -r requirements.txt
+   ```
+
+5. Rename the .env.EXAMPLE file to .env, and provide your PostgreSQL database username and password in DB_USERNAME and DB_PASSWORD. Make sure the host and port match your PostgreSQL setup.
+
+6. Start the FastAPI server:
+
+   ```sh
+   uvicorn app.main:app --reload
+   ```
 
 ## Usage
 
-The application can be used in a web browser. Use the link in [Link to Application](#link-to-application) to access the page in any browser.
+### Front End
 
-1. The link will take you to the home page for my portfolio.
+- Open your browser and navigate to [http://localhost:3000](http://localhost:3000) (or the deployed Netlify URL).
+- Use the navigation bar to browse sections like About Me, Portfolio, Resume, and Contact.
+- Use the contact form to submit a message. This sends a request to the FastAPI back end.
 
-    ![portfolio main page](./client/src/assets/imgs/portfolio-homepage.png)
+![Screenshot of homepage](./client/src/assets/imgs/portfolio-homepage.png)
 
-2. Use the tabs at the top right to navigate to the other pages. Use the links at the bottom to connect with me on StackOverflow, LinkedIn, and GitHub.
+### Back End
 
-If you have loaded the repository onto your local device:
+- Once the FastAPI server is running, it listens at `http://localhost:8000`.
+- Form submissions are handled via REST endpoints and stored in a PostgreSQL database using SQLAlchemy.
+- To explore the API, visit the interactive documentation:
 
-1. Run the application using the following command. Note that the repository is set up to run on port 3000. You may need to change the port or check if you are running anything on port 3000.
-
-    ```sh
-    npm run dev
-    ```
+  ```
+  http://localhost:8000/docs
+  ```
 
 ## Credits
 
-Although no starter code was provided for this assignment, I used some files from other projects to get started. I initially created a Vite project and then used the source code from the 23-Ins_React-Router assignment to get my React component interactions and navigation tabs set up (in GitLab, [RUT-VIRT-FSF-PT-10-2024-U-LOLC](https://git.bootcampcontent.com/Rutgers-University/RUT-VIRT-FSF-PT-10-2024-U-LOLC) > 12-React > 01-Activities > 23-Ins_React-Router). I used React Bootstrap components, Bootstrap CSS, and React Icons throughout the project. The background photo is from Pawel Czerwinski on [Unsplash](https://unsplash.com/photos/a-purple-abstract-background-with-curves-1A_dO4TFKgM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash). I was inspired by the design of another developer's portfolio, [Soumyajit Behera](https://soumyajit.vercel.app/), and used a similar color scheme in my project. All other code was developed by myself with the assistance of GitHub Copilot and ChatGPT, including the back end.
+This project was created with support from the following:
+
+- **Frameworks/Libraries:** React, React Bootstrap, Bootstrap CSS, React Icons
+- **Starter Code & References:** Source structure and navigation logic inspired by the `23-Ins_React-Router` module from Rutgers University Coding Bootcamp
+- **Design Inspiration:** [Soumyajit Behera’s portfolio](https://soumyajit.vercel.app/)
+- **Background Image:** Photo by Pawel Czerwinski on [Unsplash](https://unsplash.com/photos/a-purple-abstract-background-with-curves-1A_dO4TFKgM)
+- **AI Assistants:** GitHub Copilot and ChatGPT for coding guidance
+
+All other code was developed by me.
 
 ## License
 
-MIT License
+This project is licensed under the MIT License. See the LICENSE section for more details.
 
-Copyright (c) 2025 Amelia Alvarado
+## Contact
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+For questions, collaboration opportunities, or feedback, feel free to reach out:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-## Questions
-
-For any questions about this project, please contact me by email: ameliabalvarado@gmail.com
+📧 ameliabalvarado@gmail.com
