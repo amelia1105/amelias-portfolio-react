@@ -73,29 +73,23 @@ To run the project locally:
 
 1. Ensure you have **Python 3.8+**, **pip**, and **PostgreSQL** installed.
 
-2. Create and activate a virtual environment:
-
-   ```sh
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. Navigate to the server directory:
+2. Navigate to the server directory:
 
    ```sh
    cd server
+   ```
+
+3. Create and activate a virtual environment:
+
+   ```sh
+   python -m venv env
+   source env/bin/activate  # On Windows: env\Scripts\activate
    ```
 
 4. Install the required Python packages:
 
    ```sh
    pip install -r requirements.txt
-   ```
-
-   or
-
-   ```sh
-   pip3 install -r requirements.txt
    ```
 
 5. Rename the .env.EXAMPLE file to .env, and provide your PostgreSQL database username and password in DB_USERNAME and DB_PASSWORD. Make sure the host and port match your PostgreSQL setup.
