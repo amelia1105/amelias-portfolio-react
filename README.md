@@ -102,13 +102,17 @@ To run the project locally:
 
 ## Usage
 
+If accessed by the link above, navigate using the tabs at the top right.
+
+![Screenshot of homepage](./client/src/assets/imgs/portfolio-homepage.png)
+
+Send me a message on the Contact page if you're interested in contacting me.
+
 ### Front End
 
 - Open your browser and navigate to [http://localhost:3000](http://localhost:3000) (or the deployed Netlify URL).
 - Use the navigation bar to browse sections like About Me, Portfolio, Resume, and Contact.
 - Use the contact form to submit a message. This sends a request to the FastAPI back end.
-
-![Screenshot of homepage](./client/src/assets/imgs/portfolio-homepage.png)
 
 ### Back End
 
