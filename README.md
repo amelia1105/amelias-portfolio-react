@@ -21,11 +21,11 @@ Through this project, I gained experience with component-based architecture, cod
 
 ## Live Site
 
-👉 [Visit my Portfolio](https://amelia-alvarado.netlify.app/)
+👉 [Visit My Portfolio](https://amelia-alvarado.netlify.app/)
 
 ## Installation
 
-This application is accessible in any modern web browser using the link provided in [Live Site](#live-site) section. No installation is required to view the deployed portfolio.
+This application is accessible in any modern web browser using the link provided in [Live Site](#live-site). No installation is required to view the deployed portfolio.
 
 To run the project locally:
 
